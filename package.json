@@ -15,6 +15,7 @@
     ]
   },
   "scripts": {
+    "start:app": "yarn --cwd apps/my-app start",
     "build:devyeet-app": "./scripts/build-dev-yeet-app.sh",
     "build:packages": "./scripts/build-packages.sh",
     "clean": "./scripts/clean.sh && yarn workspaces run clean",
@@ -23,7 +24,6 @@
     "prepare": "husky install",
     "run:ts-task": "yarn ts-node -O '{\"module\":\"commonjs\"}'",
     "start:deploy": "./scripts/update-green-branch.sh",
-    "storybook": "start-storybook -p 6006",
     "test": "TZ=UTC yarn workspaces run test --watchAll=false --passWithNoTests"
   },
   "dependencies": {},
@@ -40,10 +40,6 @@
     "@babel/preset-typescript": "^7.14.5",
     "@babel/runtime": "^7.14.6",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.4.3",
-    "@storybook/addon-essentials": "^6.3.4",
-    "@storybook/addon-links": "^6.3.4",
-    "@storybook/addons": "^6.3.4",
-    "@storybook/react": "^6.3.4",
     "@svgr/webpack": "^5.5.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",

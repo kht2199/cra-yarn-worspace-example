@@ -12,7 +12,6 @@ module.exports = {
       '!*lint-staged*',
       '!__jest__',
       '!__mocks__',
-      '!.storybook',
       '!.husky',
     ]);
 

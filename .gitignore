@@ -25,3 +25,6 @@ yarn-error.log*
 credentials.json
 tmp
 temp
+
+*.iml
+.idea

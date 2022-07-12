@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { log } from '@namespace/common';
+import { log } from '@namespace/common/src';
 
 export default function AwesomeComponent() {
   useEffect(() => {
